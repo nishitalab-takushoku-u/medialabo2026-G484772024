@@ -1,11 +1,15 @@
 h1{
     color: red;
-    background-color:aquamarine;
+    background-color:rgb(127, 255, 236);
 }
 
 h2{
     border-bottom-style: solid;
     color:aqua;
+}
+
+h3{
+    color: rgb(226, 43, 211);
 }
 
 p{
