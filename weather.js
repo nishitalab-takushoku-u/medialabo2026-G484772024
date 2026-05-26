@@ -25,9 +25,40 @@ let b = document.querySelector('button#print');
 b.addEventListener('click', print);
 // 課題5-1 の関数 printDom() はここに記述すること
 function printDom(data) {
-  
+  let r = document.querySelector("body");
+  let result = document.createElement("div#result");
+  let x = document.createElement('ul');
+  result.insertAdjacentElement('beforeend', x);
+  r.insertAdjacentElement('beforeend', result)
+  let a = document.createElement('li');
+  a.textContent = '緯度';
+  x.insertAdjacentElement('beforeend', a);
+  let c = document.createElement('li');
+  c.textContent = '経度';
+  x.insertAdjacentElement('beforeend', c);
+  let d = document.createElement('li');
+  d.textContent = '天気';
+  x.insertAdjacentElement('beforeend', d);
+  let e = document.createElement('li');
+  e.textContent = '最低気温';
+  x.insertAdjacentElement('beforeend', e);
+  let f = document.createElement('li');
+  f.textContent = '最高気温';
+  x.insertAdjacentElement('beforeend', f);
+  let g = document.createElement('li');
+  g.textContent = '湿度';
+  x.insertAdjacentElement('beforeend', g);
+  let h = document.createElement('li');
+  h.textContent = '風速';
+  x.insertAdjacentElement('beforeend', h);
+  let i = document.createElement('li');
+  i.textContent = '風向';
+  x.insertAdjacentElement('beforeend', i);
+  let j = document.createElement('li');
+  j.textContent = '都市名';
+  x.insertAdjacentElement('beforeend', j);
 }
-
+ 
 // 課題6-1 のイベントハンドラ登録処理は以下に記述
 
 
