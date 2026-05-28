@@ -5,14 +5,29 @@
     <meta charset="utf-8">
     <title>世界の天気</title>
     <link rel="stylesheet" href="project.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>
     <script src="weather.js" defer></script>
   </head>
   <body>
     <h1>世界の天気</h1>
-    <h2>以下の地域の天気に関する情報を検索して表示します。</h2>
-    <label id="kaisu"></label>検索キーワード:
-    <input  id="cityid" >
-      <button id="print">検索</button>
+    <h2>一部の国の天気情報を見ることができます。</h2>
+    <label for="city">検索キーワード</label>
+    <select name="city" id="city">
+        <option value="">国を選択してください</option>
+        <option value="360630">エジプト</option>
+        <option value="524901">ロシア</option>
+        <option value="993800">南アフリカ</option>
+        <option value="1816670">中華人民共和国</option>
+        <option value="1850147">日本</option>
+        <option value="1880252">シンガポール</option>
+        <option value="2147714">オーストラリア</option>
+        <option value="2643743">イギリス</option>
+        <option value="2968815">フランス</option>
+        <option value="3451189">ブラジル</option>
+        <option value="5128581">アメリカ1</option>
+        <option value="5368361">アメリカ2</option>
+    </select>
+      <button id="sendRequest">検索</button>
     <!-- <ul>
       <li>緯度: 116.3972</li>
       <li>経度: 39.9075</li>
