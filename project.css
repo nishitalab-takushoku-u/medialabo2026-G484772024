@@ -1,3 +1,21 @@
+html{
+    background-color: rgba(0, 255, 157, 0.943);
+}
+
 h1{
-    color: blue;
+    color: brown;
+    text-shadow: rgba(255, 208, 0, 0.951)
+}
+
+h2{
+    color:rgba(255, 0, 200, 0.951);
+    border-bottom-style: dashed;
+}
+
+label{
+    font-style: italic;
+}
+
+select{
+    font-style: italic;
 }
