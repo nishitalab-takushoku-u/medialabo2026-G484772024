@@ -19,3 +19,9 @@ label{
 select{
     font-style: italic;
 }
+
+li{
+     list-style-type: none;
+     font-style: italic;
+     font-size: 150%;
+}
