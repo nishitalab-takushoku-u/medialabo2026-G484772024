@@ -64,6 +64,44 @@ function printDom(data) {
   let j = document.createElement('li');
   j.textContent = '都市名'+"　"+data["name"];
   x.insertAdjacentElement('beforeend', j);
+  let img = document.createElement('img');
+  result.insertAdjacentElement('beforeend', img);
+  if(data["name"] === 'カイロ'){
+    img.setAttribute('src', 'https://www.illust-ai.com/datas/00000027s.jpg?1');
+  }
+  if(data["name"] === 'モスクワ'){
+    img.setAttribute('src', 'https://illustcenter.com/wp-content/uploads/2022/02/rdesign_14089k.png');
+  }
+  if(data["name"] === 'ヨハネスブルグ'){
+    img.setAttribute('src', 'https://illustcenter.com/wp-content/uploads/2022/02/rdesign_14089k.png');
+  }
+  if(data["name"] === '北京市'){
+    img.setAttribute('src', 'https://illustcenter.com/wp-content/uploads/2022/02/rdesign_14089k.png');
+  }
+  if(data["name"] === '東京都'){
+    img.setAttribute('src', 'https://illustcenter.com/wp-content/uploads/2022/02/rdesign_14089k.png');
+  }
+  if(data["name"] === 'シンガポール'){
+    img.setAttribute('src', 'https://illustcenter.com/wp-content/uploads/2022/02/rdesign_14089k.png');
+  }
+  if(data["name"] === 'シドニー'){
+    img.setAttribute('src', 'https://creatime.net/wp-content/uploads/2021/07/umbrella-800x800.png');
+  }
+  if(data["name"] === 'ロンドン'){
+    img.setAttribute('src', 'https://illustcenter.com/wp-content/uploads/2022/02/rdesign_14089k.png');
+  }
+  if(data["name"] === 'Paris'){
+    img.setAttribute('src', 'https://img.freepik.com/free-vector/realistic-cloud-transparent_107791-891.jpg?semt=ais_hybrid&w=740&q=80');
+  }
+  if(data["name"] === 'State of Rio de Janeiro'){
+    img.setAttribute('src', 'https://illustcenter.com/wp-content/uploads/2022/02/rdesign_14089k.png');
+  }
+  if(data["name"] === 'ニューヨーク'){
+    img.setAttribute('src', 'https://illustcenter.com/wp-content/uploads/2022/02/rdesign_14089k.png');
+  }
+  if(data["name"] === 'ロサンゼルス'){
+    img.setAttribute('src', 'https://illustcenter.com/wp-content/uploads/2022/02/rdesign_14089k.png','https://www.at-newyork.com/wp-content/uploads/travel/info/geograph_01.jpg');
+  }
 }
  
 // 課題6-1 のイベントハンドラ登録処理は以下に記述
